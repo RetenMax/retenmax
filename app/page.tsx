@@ -1,11 +1,11 @@
 import Hero from "@/components/Hero";
-import Image from "next/image";
 
 export default function Home() {
     return (
         <main>
             <Hero />
-            body
+            body <br></br>body <br></br>body <br></br>body <br></br>body <br></br>body <br></br>body <br></br>body <br></br>body <br></br>
+            body <br></br>body <br></br>body <br></br>
         </main>
     );
 }

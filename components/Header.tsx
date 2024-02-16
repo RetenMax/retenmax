@@ -3,7 +3,7 @@ import { Button } from "./ui/button"
 
 const Header = () => {
     return(
-        <header className="sticky top-0 backdrop-blur-md bg-black/10 w-full pt-6 pb-6">
+        <header className="fixed top-0 backdrop-blur-md bg-black/10 w-full pt-6 pb-6 z-10">
             <div className="container mx-auto flex justify-between">
                 <Image
                     src={"/images/logo.svg"}

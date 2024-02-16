@@ -25,7 +25,7 @@
     --accent: rgb(56, 56, 56);
     --accent-foreground: rgb(221, 221, 221);
 
-    --destructive: rgb(0, 160, 78);
+    --destructive: rgba(243, 91, 4, 1);
     --destructive-foreground: rgb(221, 221, 221);
 
     --border: rgb(56, 56, 56);
