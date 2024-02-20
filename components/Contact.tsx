@@ -13,9 +13,9 @@ const Contact = () => {
             transition={{ ease: 'easeInOut', duration: 1.5 }}
             id="contato"
             className="container pt-14 pb-14 antialiased">
-            <div className="grid items-center justify-center align-center h-[600px] bg-[url('/images/bg-contact.webp')] bg-cover p-24">
+            <div className="grid items-center justify-center align-center bg-[url('/images/bg-contact.webp')] bg-cover md:h-[600px] p-24">
                 <div className="flex flex-col gap-6 items-center justify-center">
-                    <h1 className="w-full text-8xl text-center font-extrabold text-orange-100">
+                    <h1 className="w-full text-4xl text-center font-extrabold text-orange-100 md:text-8xl">
                         Vamos <br></br>Conversar?
                     </h1>
                     <p className="text-orange-100">Nós ajudamos a sua empresa a aprimorar a retenção de clientes e a de colaboradores.</p>

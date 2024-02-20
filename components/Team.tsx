@@ -6,18 +6,18 @@ import { motion } from "framer-motion"
 
 const Team = () => {
     return(
-        <section className="bg-[url('/images/bg-team.webp')] bg-cover antialiased p-20">
-            <div className="container grid grid-cols-3">
+        <section className="bg-[url('/images/bg-team.webp')] bg-cover antialiased max-md:mt-8 md:p-20">
+            <div className="container grid md:grid-cols-3">
 
-                <div className="grid col-span-2">
-                    <h1 className="leading-[80px] text-3xl font-extrabold text-center text-orange-100">
+                <div className="grid md:col-span-2">
+                    <h1 className="font-extrabold text-center text-orange-100 max-md: mb-8 md:leading-[80px] text-3xl">
                         Quem são os Guardiões da Retenção
                     </h1>
                     <motion.div
                         initial={{ opacity: 0 }}
                         whileInView={{ opacity: 1 }}
                         transition={{ ease: 'easeInOut', duration: 1.5 }}
-                        className="grid grid-cols-2 h-full">
+                        className="grid h-full max-md: gap-8 md:grid-cols-2">
                         <div className="flex flex-col items-center">
                             <Image
                                 width={370}
@@ -52,6 +52,7 @@ const Team = () => {
                     height="auto"
                     src="images/guardioes-side.webp"
                     alt="Guardiões da Retenção"
+                    className="hidden md:block"
                 />
 
             </div>
