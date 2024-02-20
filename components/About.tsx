@@ -8,8 +8,8 @@ import { motion } from "framer-motion"
 
 const About = () => {
     return (
-        <section className="container pt-14 pb-14">
-            <div className="grid grid-cols-2 gap-24 h-[600px] bg-[url('/images/bg-about.webp')] bg-cover p-24">
+        <section className="container lg:pt-14 pb-14">
+            <div className="max-md:flex flex-col-reverse gap-7 p-6 bg-[url('/images/bg-about.webp')] bg-cover min-lg:h-[600px] grid gap-24 grid-cols-2 p-24">
                 <motion.div
                     initial={{ opacity: 0, z: 1, transform: "translateX(-40px)" }}
                     whileInView={{ opacity: 1, z: 1, transform: "translateX(0)" }}
@@ -23,7 +23,7 @@ const About = () => {
                     initial={{ opacity: 0, z: 1, transform: "translateX(40px)" }}
                     whileInView={{ opacity: 1, z: 1, transform: "translateX(0)" }}
                     transition={{ ease: 'easeInOut', duration: 1.5 }} className="flex flex-col justify-center align-center gap-6">
-                    <h1 className="w-full text-8xl font-extrabold antialiased text-orange-100">
+                    <h1 className="w-full text-5xl font-extrabold antialiased text-orange-100 lg:text-8xl">
                         O que é a Retenmax?
                     </h1>
                     <Link href="https://api.whatsapp.com/send?phone=5567999482501" target="_blank">
