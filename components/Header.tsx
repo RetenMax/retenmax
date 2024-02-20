@@ -23,7 +23,7 @@ const Header = () => {
                         height={32}
                     />
                 </Link>
-                <div className="flex gap-4">
+                <div className="hidden lg:flex gap-4 visible">
                     <Link href="#podcast">
                         <Button variant={'ghost'}>Podcast</Button>
                     </Link>

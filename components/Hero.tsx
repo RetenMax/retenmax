@@ -9,13 +9,14 @@ import { motion } from "framer-motion"
 
 const Hero = () => {
     return(
-        <div id="home" className="w-full h-[800px] bg-[url('/images/hero-bg.webp')] bg-cover">
-            <div className="container h-[800px] relative flex items-center">
+        <div id="home" className="h-auto lg:w-full h-[800px] bg-[url('/images/hero-bg.webp')] bg-cover">
+            <div className="container h-[600px] relative flex items-center lg:h-[800px]">
                 <motion.div
                     initial={{ opacity: 0 }}
                     whileInView={{ opacity: 1 }}
                     viewport={{ once: true }}
-                    transition={{ ease: 'easeInOut', duration: 1 }}>
+                    transition={{ ease: 'easeInOut', duration: 1 }}
+                    className="hidden lg:block">
                     <Image
                         className="absolute top-0 right-0 -z-10"
                         src="/images/hero-banner.webp"
@@ -28,7 +29,7 @@ const Hero = () => {
                     initial={{ opacity: 0, z: 1, transform: "translateY(40px)" }}
                     whileInView={{ opacity: 1, z: 1, transform: "translateY(0)" }}
                     transition={{ ease: 'easeInOut', duration: 1.5 }}>
-                    <h1 className="w-full leading-[86px] text-8xl font-extrabold antialiased text-orange-100">
+                    <h1 className="w-full leading-[55px] text-6xl lg:text-8xl leading-[86px] font-extrabold antialiased text-orange-100">
                         Retenção <br></br> Máxima <br></br> de Clientes
                     </h1>
                     <h2 className="pt-6 mb-5 font-light">
