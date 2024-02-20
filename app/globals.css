@@ -3,44 +3,75 @@
 @tailwind utilities;
 
 @layer base {
-  :root {
-    --background: rgba(40, 40, 40, 1);
-    --foreground: rgb(255, 255, 255);
+    :root {
+        --background: rgba(40, 40, 40, 1);
+        --foreground: rgb(255, 255, 255);
 
-    --card: rgb(221, 221, 221);
-    --card-foreground: rgb(221, 221, 221);
+        --card: rgb(221, 221, 221);
+        --card-foreground: rgb(221, 221, 221);
 
-    --popover: rgb(221, 221, 221);
-    --popover-foreground: rgb(221, 221, 221);
+        --popover: rgb(221, 221, 221);
+        --popover-foreground: rgb(221, 221, 221);
 
-    --primary: rgba(255, 255, 255, 0.2);
-    --primary-foreground: rgba(255, 250, 250, 1);
+        --primary: rgba(255, 255, 255, 0.2);
+        --primary-foreground: rgba(255, 250, 250, 1);
 
-    --secondary: rgb(56, 56, 56);
-    --secondary-foreground: rgb(221, 221, 221);
+        --secondary: rgb(56, 56, 56);
+        --secondary-foreground: rgb(221, 221, 221);
 
-    --muted: rgb(56, 56, 56);
-    --muted-foreground: rgb(193, 193, 193);
+        --muted: rgb(56, 56, 56);
+        --muted-foreground: rgb(193, 193, 193);
 
-    --accent: rgb(56, 56, 56);
-    --accent-foreground: rgb(221, 221, 221);
+        --accent: rgb(56, 56, 56);
+        --accent-foreground: rgb(221, 221, 221);
 
-    --destructive: rgba(243, 91, 4, 1);
-    --destructive-foreground: rgb(221, 221, 221);
+        --destructive: rgba(243, 91, 4, 1);
+        --destructive-foreground: rgb(221, 221, 221);
 
-    --border: rgb(56, 56, 56);
-    --input: rgb(56, 56, 56);
-    --ring: rgb(53, 53, 214);
+        --border: rgb(56, 56, 56);
+        --input: rgb(56, 56, 56);
+        --ring: rgb(53, 53, 214);
 
-    --radius: 1.2rem;
-  }
+        --radius: 1.2rem;
+    }
 }
 
 @layer base {
-  * {
-    @apply border-border;
-  }
-  body {
-    @apply bg-background text-foreground;
-  }
+    * {
+        @apply border-border;
+        scroll-margin-top: 100px;
+        scroll-behavior: smooth;
+    }
+    body {
+        @apply bg-background text-foreground;
+    }
+}
+
+@keyframes orbit {
+    0% {
+      transform: rotate(0deg) translateX(-50%);
+    }
+    100% {
+      transform: rotate(360deg) translateX(-50%);
+    }
+}
+
+.orbit {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 50%;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    animation-name: orbit;
+}
+
+/* You can add additional styles for different orbits if needed */
+.orbit-0 {
+/* Specific styles for the first orbit */
+}
+
+.orbit-1 {
+/* Specific styles for the second orbit */
 }

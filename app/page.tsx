@@ -1,11 +1,25 @@
 import Hero from "@/components/Hero";
+import Companies from "@/components/Companies";
+import About from "@/components/About";
+import Clients from "@/components/Clients";
+import Team from "@/components/Team";
+import Contact from "@/components/Contact";
+import Footer from "@/components/Footer";
+import Podcast from "@/components/Podcast";
 
-export default function Home() {
+const Home = () => {
     return (
         <main>
             <Hero />
-            body <br></br>body <br></br>body <br></br>body <br></br>body <br></br>body <br></br>body <br></br>body <br></br>body <br></br>
-            body <br></br>body <br></br>body <br></br>
+            <Companies />
+            <About />
+            <Podcast />
+            <Clients />
+            <Team />
+            <Contact />
+            <Footer />
         </main>
-    );
+    )
 }
+
+export default Home

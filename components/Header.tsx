@@ -1,25 +1,43 @@
+"use client"
+
 import Image from "next/image"
 import { Button } from "./ui/button"
+import Link from "next/link"
+
+import { motion } from "framer-motion"
 
 const Header = () => {
     return(
         <header className="fixed top-0 backdrop-blur-md bg-black/10 w-full pt-6 pb-6 z-10">
-            <div className="container mx-auto flex justify-between">
-                <Image
-                    src={"/images/logo.svg"}
-                    alt="Retenmax Logo"
-                    width={160}
-                    height={32}
-                />
+            <motion.div
+                initial={{ opacity: 0 }}
+                whileInView={{ opacity: 1 }}
+                viewport={{ once: true }}
+                transition={{ ease: 'easeInOut', duration: 1 }}
+                className="container mx-auto flex justify-between">
+                <Link href="#home">
+                    <Image
+                        src={"/images/logo.svg"}
+                        alt="Retenmax Logo"
+                        width={160}
+                        height={32}
+                    />
+                </Link>
                 <div className="flex gap-4">
-                    <Button variant={'ghost'}>Podcast</Button>
-                    <Button variant={'ghost'}>Serviços</Button>
-                    <Button variant={'ghost'}>Clientes</Button>
-                    <a href="#">
+                    <Link href="#podcast">
+                        <Button variant={'ghost'}>Podcast</Button>
+                    </Link>
+                    <Link href="#empresas">
+                        <Button variant={'ghost'}>Serviços</Button>
+                    </Link>
+                    <Link href="#clientes">
+                        <Button variant={'ghost'}>Clientes</Button>
+                    </Link>
+                    <Link href="#contato">
                         <Button>Entre em contato</Button>
-                    </a>
+                    </Link>
                 </div>
-            </div>
+            </motion.div>
         </header>
     )
 }
