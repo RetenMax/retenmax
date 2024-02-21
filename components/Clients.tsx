@@ -11,10 +11,13 @@ const Clients = () => {
             transition={{ ease: 'easeInOut', duration: 1.5 }}
             id="clientes"
             className="container">
-            <h1 className="text-center text-4xl font-extrabold antialiased text-orange-100">
+            {/* <h1 className="text-center text-4xl font-extrabold antialiased text-orange-100">
                 Quem confia na RetenMax
-            </h1>
-            <div className="grid grid-cols-2 justify-items-center items-center gap-4 mt-10 md:grid-cols-4">
+            </h1> */}
+            <div className="w-full flex justify-center">
+                <Image src="/images/clientes.webp" alt="Clientes Retenmax" width={1000} height={1000} />
+            </div>
+            {/* <div className="grid grid-cols-2 justify-items-center items-center gap-4 mt-10 md:grid-cols-4">
                 <Image width={150} height={150} src="/clients/workout-360.png" alt="Logo" className="object-contain" />
                 <Image width={150} height={150} src="/clients/worklav.png" alt="Logo" className="object-contain" />
                 <Image width={150} height={150} src="/clients/vis-a-vis.png" alt="Logo" className="object-contain" />
@@ -37,7 +40,7 @@ const Clients = () => {
                 <Image width={150} height={150} src="/clients/dale-sorvetes.png" alt="Logo" className="object-contain" />
                 <Image width={150} height={150} src="/clients/rejala.png" alt="Logo" className="object-contain" />
                 <Image width={150} height={150} src="/clients/inviolavel.png" alt="Logo" className="object-contain" />
-            </div>
+            </div> */}
         </motion.section>
     );
 };
