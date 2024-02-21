@@ -10,7 +10,7 @@ import { motion } from "framer-motion"
 const Hero = () => {
     return(
         <div id="home" className="h-auto w-full bg-[url('/images/hero-bg.webp')] bg-cover lg:h-[800px]">
-            <div className="container h-[600px] relative flex items-center lg:h-[800px]">
+            <div className="container h-[600px] relative flex items-center md:h-[800px] md:items-center">
                 <motion.div
                     initial={{ opacity: 0 }}
                     whileInView={{ opacity: 1 }}
