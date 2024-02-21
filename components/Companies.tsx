@@ -15,8 +15,8 @@ const Companies = () => {
                         whileInView={{ opacity: 1, transform: "translateY(0)" }}
                         transition={{ ease: 'easeInOut', duration: 1.5 }}
                         className="mix-blend-lighten"
-                        width={740}
-                        height={500}
+                        width={320}
+                        height={420}
                         alt="Retenmax Empresas"
                         src="/images/companies.webp"
                     />
