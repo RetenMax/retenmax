@@ -14,7 +14,15 @@ const Podcast = () => {
                 Os Guardiões da Retenção
             </h1>
             <iframe
-                width="320 lg:560"
+                className="hidden md:block"
+                width="560"
+                height="315" src="https://www.youtube.com/embed/Lqjta6jsYxI?si=URUNXq5oztfhengT"
+                title="YouTube video player"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            />
+            <iframe
+                className="block md:hidden"
+                width="320"
                 height="315" src="https://www.youtube.com/embed/Lqjta6jsYxI?si=URUNXq5oztfhengT"
                 title="YouTube video player"
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
