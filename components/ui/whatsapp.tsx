@@ -12,7 +12,7 @@ const Whatsapp = () => {
                 whileInView={{ opacity: 1, transform: "translateY(0px)" }}
                 transition={{ ease: 'easeInOut', duration: 1.5 }}
                 className="bg-orange-500 rounded-full p-5 w-auto h-auto cursor-pointer">
-                <Link href="https://api.whatsapp.com/send?phone=5567999482501">
+                <Link href="https://api.whatsapp.com/send?phone=5567999502501">
                     <Image
                         width={33}
                         height={33}

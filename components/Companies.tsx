@@ -15,10 +15,10 @@ const Companies = () => {
                         whileInView={{ opacity: 1, transform: "translateY(0)" }}
                         transition={{ ease: 'easeInOut', duration: 1.5 }}
                         className="mix-blend-lighten"
-                        width={700}
+                        width={320}
                         height={400}
                         alt="Retenmax Empresas"
-                        src="/images/companies.png"
+                        src="/images/companies.webp"
                     />
                 </div>
                 <motion.div

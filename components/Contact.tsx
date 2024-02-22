@@ -19,7 +19,7 @@ const Contact = () => {
                         Vamos <br></br>Conversar?
                     </h1>
                     <p className="text-orange-100">Nós ajudamos a sua empresa a aprimorar a retenção de clientes e a de colaboradores.</p>
-                    <Link href="https://api.whatsapp.com/send?phone=5567999482501" target="_blank">
+                    <Link href="https://api.whatsapp.com/send?phone=5567999502501" target="_blank">
                         <Button className="flex gap-2" variant="destructive">
                             Quero reter meus clientes <ArrowRightCircle className="h-4 w-4" />
                         </Button>
