@@ -26,7 +26,6 @@ const Podcast = () => {
                         width="560"
                         height="315"
                         frameBorder="0"
-                        allowfullscreen=""
                         allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
                         loading="lazy">
                     </iframe>
@@ -36,7 +35,6 @@ const Podcast = () => {
                         width="320"
                         height="315"
                         frameBorder="0"
-                        allowfullscreen=""
                         allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
                         loading="lazy">
                     </iframe>
