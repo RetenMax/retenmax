@@ -8,6 +8,23 @@ const inter = Inter({ subsets: ["latin"] });
 export const metadata: Metadata = {
     title: "Retenmax",
     description: "Retenção máxima de clientes",
+    keywords: "consultoria empresarial, software empresarial, campo grande ms, retenmax, retenção de clientes, retenção de clientes campo grande ms, retenção de clientes ms, retenção de clientes mato grosso do sul, retenção de clientes brasil, retenção de clientes sul, retenção de clientes centro-oeste, retenção de clientes norte, retenção de clientes nordeste, retenção de clientes sudeste, retenção de clientes suldeste, retenção de clientes mato grosso do sul, retenção de clientes mato grosso, retenção de clientes goiás, retenção de clientes são paulo, retenção de clientes rio de janeiro, retenção de clientes minas gerais, retenção de clientes espírito santo, retenção de clientes paraná, retenção de clientes santa catarina, retenção de clientes rio grande do sul, retenção de clientes mato grosso do sul, retenção de clientes mato grosso do sul, retenção de clientes mato grosso do sul, retenção de clientes mato grosso do sul, retenção de clientes mato grosso do sul ",
+    authors: { name: "Arthur Maximiliano" },
+    viewport: "width=device-width, initial-scale=1.0",
+    robots: "follow, index",
+    openGraph: {
+        type: "website",
+        locale: "pt_BR",
+        url: "https://retenmax.com.br",
+        siteName: "Retenmax - Retenxão máxima de clientes",
+        images: [
+            {
+                url: "https://retenmax.com.br/images/logo.svg",
+                width: 1200,
+                height: 630,
+            }
+        ]
+    }
 };
 
 export default function RootLayout({ children }: Readonly<{children: React.ReactNode}>) {
