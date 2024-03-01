@@ -20,7 +20,7 @@ const Header = () => {
                         src={"/images/logo.svg"}
                         alt="Retenmax Logo"
                         width={160}
-                        height={32}
+                        height={30}
                     />
                 </Link>
                 <div className="hidden lg:flex gap-4 visible">
