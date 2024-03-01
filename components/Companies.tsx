@@ -16,7 +16,7 @@ const Companies = () => {
                         transition={{ ease: 'easeInOut', duration: 1.5 }}
                         className="mix-blend-lighten"
                         width={320}
-                        height={420}
+                        height={400}
                         alt="Retenmax Empresas"
                         src="/images/companies.webp"
                     />
@@ -25,7 +25,7 @@ const Companies = () => {
                     initial={{ opacity: 0, z: 1, transform: "translateY(40px)" }}
                     whileInView={{ opacity: 1, z: 1, transform: "translateY(0)" }}
                     transition={{ ease: 'easeInOut', duration: 1.5 }}
-                    className="w-full flex flex-col justify-center items-center w-full min-h-full">
+                    className="w-full flex flex-col justify-center items-center min-h-full">
                     <h1 className="leading-[46px] text-5xl font-extrabold antialiased text-orange-100 lg:text-7xl ">
                         Retenção em todas as verticais
                     </h1>
