@@ -6,7 +6,6 @@ import Team from "@/components/Team";
 import Contact from "@/components/Contact";
 import Podcast from "@/components/Podcast";
 
-
 const Home = () => {
     return (
         <main>

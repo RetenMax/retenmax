@@ -17,11 +17,12 @@ const Blog = async () => {
 
     return (
         <main className="pl-16 pt-32">
+
             <h1 className="w-full leading-[50px] text-6xl lg:text-8xl font-extrabold antialiased text-orange-100 lg:leading-[86px]">
                 Blog
             </h1>
 
-            <div className="grid grid-cols-4 gap-6 pt-16 pb-16">
+            <div className="grid grid-cols-3 gap-6 pt-16 pb-16 bg-[url('/images/hero-bg.webp')]">
                 {posts && posts.map(post => {
                     return(
                         <Link key={post.id} href={`blog/${post.slug}`}>
@@ -33,12 +34,12 @@ const Blog = async () => {
                                     width={500}
                                     height={500}
                                 />
-                                <div className="bg-black/30 backdrop-blur-md p-5">
+                                <div className="flex flex-col justify-between min-h-44 bg-black/30 backdrop-blur-md p-5">
                                     <h1 className="text-4xl font-bold antialiased text-orange-100">
                                         {post.titulo}
                                     </h1>
                                     <div className="flex text-gray-400 text-sm pt-2">
-                                        {new Date(post.date_created).getDay()}/
+                                        {new Date(post.date_created).getUTCDate()}/
                                         {new Date(post.date_created).getMonth()}/
                                         {new Date(post.date_created).getFullYear()}
                                     </div>

@@ -1,6 +1,8 @@
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
+
+// Components
 import Header from "@/components/Header";
 import Whatsapp from "@/components/ui/whatsapp";
 import Footer from "@/components/Footer";
