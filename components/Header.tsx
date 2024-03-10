@@ -15,7 +15,7 @@ const Header = () => {
                 viewport={{ once: true }}
                 transition={{ ease: 'easeInOut', duration: 1 }}
                 className="container mx-auto flex justify-between">
-                <Link href="#home">
+                <Link href="/">
                     <Image
                         src={"/images/logo.svg"}
                         alt="Retenmax Logo"
@@ -24,16 +24,19 @@ const Header = () => {
                     />
                 </Link>
                 <div className="hidden lg:flex gap-4 visible">
-                    <Link href="#podcast">
+                    <Link href="/blog">
+                        <Button variant={'ghost'}>Blog</Button>
+                    </Link>
+                    <Link href="/#podcast">
                         <Button variant={'ghost'}>Podcast</Button>
                     </Link>
-                    <Link href="#empresas">
+                    <Link href="/#empresas">
                         <Button variant={'ghost'}>Serviços</Button>
                     </Link>
-                    <Link href="#clientes">
+                    <Link href="/#clientes">
                         <Button variant={'ghost'}>Clientes</Button>
                     </Link>
-                    <Link href="#contato">
+                    <Link href="/#contato">
                         <Button>Entre em contato</Button>
                     </Link>
                 </div>
