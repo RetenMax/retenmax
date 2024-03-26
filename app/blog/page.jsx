@@ -22,7 +22,7 @@ const Blog = async () => {
                 Blog
             </h1>
 
-            <div className="grid grid-cols-3 gap-6 pt-16 pb-16 bg-[url('/images/hero-bg.webp')]">
+            <div className="grid grid-cols-4 gap-6 pt-16 pb-16 bg-[url('/images/hero-bg.webp')]">
                 {posts && posts.map(post => {
                     return(
                         <Link key={post.id} href={`blog/${post.slug}`}>

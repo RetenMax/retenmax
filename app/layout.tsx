@@ -18,17 +18,17 @@ export const metadata: Metadata = {
     robots: "follow, index",
     openGraph: {
         type: "website",
-            locale: "pt_BR",
-            url: "https://retenmax.com.br",
-            siteName: "Retenmax - Retenção máxima de clientes",
-            images: [
-                {
-                    url: "https://retenmax.com.br/favicon.ico",
-                    width: 128,
-                    height: 128,
-                    alt: "Retenmax - Retenção máxima de clientes",
-                },
-            ],
+        locale: "pt_BR",
+        url: "https://retenmax.com.br",
+        siteName: "Retenmax - Retenção máxima de clientes",
+        images: [
+            {
+                url: "https://retenmax.com.br/favicon.ico",
+                width: 128,
+                height: 128,
+                alt: "Retenmax - Retenção máxima de clientes",
+            },
+        ],
     }
 };
 
