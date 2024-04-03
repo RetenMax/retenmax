@@ -27,7 +27,7 @@ const Blog = async () => {
                     return(
                         <Link key={post.id} href={`blog/${post.slug}`}>
                             <div className="rounded shadow-lg p-4 w-full hover:opacity-70">
-                                <Image
+                                <img
                                     style={{objectFit: "cover", borderRadius: "10px"}}
                                     src={`${process.env.NEXT_PUBLIC_PROD_API_ENDPOINT}/assets/${post.Thumbnail}`}
                                     alt={post.titulo}
