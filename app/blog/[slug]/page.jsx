@@ -34,10 +34,10 @@ const BlogPost = async ({ params }) => {
             </Link>
 
             <h1 className="w-full h-40 leading-[50px] text-6xl lg:text-8xl font-extrabold antialiased text-orange-100 lg:leading-[86px]">
-                {post.titulo}
+                {post.Titulo}
             </h1>
 
-            <span className="pt-32" dangerouslySetInnerHTML={createMarkup(post.texto)}></span>
+            <span className="pt-32" dangerouslySetInnerHTML={createMarkup(post.Texto)}></span>
         </main>
     )
 }
