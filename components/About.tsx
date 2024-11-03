@@ -8,7 +8,7 @@ import { motion } from "framer-motion"
 
 const About = () => {
     return (
-        <section className="container lg:pt-14 pb-14">
+        <section className="container lg:pt-14 pb-14" id="sobre">
             <div className="grid grid-cols-1 md:grid-cols-2 h-auto gap-8 bg-[url('/images/bg-about.webp')] bg-cover p-8 lg:p-32">
                 <motion.div
                     initial={{ opacity: 0, z: 1, transform: "translateX(-40px)" }}
