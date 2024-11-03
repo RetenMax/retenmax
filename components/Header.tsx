@@ -16,7 +16,7 @@ const Header = async () => {
                 </Link>
                 <div className="hidden lg:flex gap-4 visible">
                     <Link href="#empresas">
-                        <Button variant={'ghost'}>Empresas</Button>
+                        <Button variant={'ghost'}>Verticais</Button>
                     </Link>
                     <Link href="#sobre">
                         <Button variant={'ghost'}>Sobre Nós</Button>
@@ -26,6 +26,9 @@ const Header = async () => {
                     </Link>
                     <Link href="#clientes">
                         <Button variant={'ghost'}>Clientes</Button>
+                    </Link>
+                    <Link href="https://dna.retenmax.com.br/">
+                        <Button variant={'default'}>Login</Button>
                     </Link>
                 </div>
             </div>
