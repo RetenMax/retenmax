@@ -56,7 +56,7 @@ const Companies = () => {
                     whileInView={{ opacity: 1, z: 1, transform: "translateY(0)" }}
                     transition={{ ease: 'easeInOut', duration: 1.5 }}
                     className="w-full flex flex-col justify-center items-center min-h-full  pb-12 lg:p-2">
-                    <h1 className="leading-[46px] text-5xl font-extrabold antialiased text-orange-100 lg:text-7xl ">
+                    <h1 className="leading-[46px] leading-2 text-4xl text-center md:text-left  md:text-7xl font-extrabold antialiased text-orange-100 ">
                         Retenção em todas as verticais
                     </h1>
                 </motion.div>

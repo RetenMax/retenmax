@@ -34,7 +34,7 @@ const Team = () => {
                                 width={370}
                                 height={476}
                                 src="/images/anderson.png"
-                                alt="Arthur Maximiliano"
+                                alt="Anderson "
                                 className="mb-4"
                             />
                             <h2 className="text-orange-100 font-semibold">CRO e Sócio na RetenMax</h2>
