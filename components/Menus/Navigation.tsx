@@ -14,6 +14,8 @@ export const Navigation = ({onClick}: Props) => {
         <Link onClick={onClick} className="hover:underline uppercase" href="#podcast">Podcast</Link>
 
         <Link onClick={onClick} className="hover:underline uppercase" href="#verticais">Verticais</Link>
+        
+        <Link onClick={onClick} className="hover:underline uppercase" href="/blog">Blog</Link>
         </>
 
     )

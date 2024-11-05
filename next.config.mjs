@@ -1,11 +1,11 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
     images: {
-        domains: ['retenmax.com.br'],
         remotePatterns: [
             {
                 protocol: "https",
                 hostname: "**.retenmax.com.br",
+                pathname: "/**", // permite todas as rotas de imagens do domínio
             }
         ],
     }

@@ -1,6 +1,9 @@
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
+import { PrismicPreview } from '@prismicio/next'
+import { repositoryName } from '@/prismicio'
+
 
 // Components
 import Header from "@/components/Header";
@@ -32,15 +35,15 @@ export const metadata: Metadata = {
     }
 };
 
-export default function RootLayout({ children }: Readonly<{children: React.ReactNode}>) {
+export default function RootLayout({ children }: {children?: any}) {
+
     return (
-        <html lang="pt-br">
-            <body className={inter.className}>
-                <Header />
-                {children}
-                <Footer />
-                <Whatsapp />
-            </body>
-        </html>
-    );
+        <html lang="en">
+        <body>
+          {children}
+          <PrismicPreview repositoryName={repositoryName} />
+        </body>
+      </html>
+    )
+
 }
