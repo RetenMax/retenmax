@@ -4,7 +4,6 @@ import Image from "next/image";
 import { motion } from "framer-motion"
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Autoplay } from "swiper/modules";
-import { div } from "framer-motion/client";
 
 type Logos = {
     src: string,

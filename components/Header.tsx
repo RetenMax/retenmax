@@ -7,14 +7,6 @@ import { Hamburger } from "./Menus/Hamburger"
 const Header = () => {
 
     return (
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-
->>>>>>> b2de6f47fcf70b1027cc1281b72068d793e28cbf
-=======
-
->>>>>>> 16a1daae2f1293733e006e6232927ce4ded264f6
         <header className="fixed top-0 backdrop-blur-md bg-black/10 w-full pt-6 pb-6 z-10">
             <div className="container mx-auto flex justify-between">
                 <Link href="/">
