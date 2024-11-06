@@ -27,7 +27,11 @@ const About = () => {
                     </h1>
                     <Link href="https://api.whatsapp.com/send?phone=5567999502501" target="_blank">
                         <Button className="flex gap-2 hover:scale-95 transition-transform duration-300" variant="destructive">
+<<<<<<< HEAD
+                        Descobrir o Potencial da Minha Empresa <ArrowRightCircle className="h-4 w-4" />
+=======
                         Descubrir o Potencial da Minha Empresa <ArrowRightCircle className="h-4 w-4" />
+>>>>>>> b2de6f47fcf70b1027cc1281b72068d793e28cbf
                         </Button>
                     </Link>
                 </motion.div>
