@@ -1,9 +1,13 @@
+"use client"
 import Image from "next/image"
-import { Button } from "./ui/button"
 import Link from "next/link"
+import { Navigation } from "./Menus/Navigation"
+import { Hamburger } from "./Menus/Hamburger"
 
-const Header = async () => {
-    return(
+const Header = () => {
+
+    return (
+
         <header className="fixed top-0 backdrop-blur-md bg-black/10 w-full pt-6 pb-6 z-10">
             <div className="container mx-auto flex justify-between">
                 <Link href="/">
@@ -14,23 +18,13 @@ const Header = async () => {
                         height={32}
                     />
                 </Link>
-                <div className="hidden lg:flex gap-4 visible">
-                    <Link href="#empresas">
-                        <Button variant={'ghost'}>Verticais</Button>
-                    </Link>
-                    <Link href="#sobre">
-                        <Button variant={'ghost'}>Sobre Nós</Button>
-                    </Link>
-                    <Link href="#podcast">
-                        <Button variant={'ghost'}>Podcast</Button>
-                    </Link>
-                    <Link href="#clientes">
-                        <Button variant={'ghost'}>Clientes</Button>
-                    </Link>
-                    <Link href="https://dna.retenmax.com.br/">
-                        <Button variant={'default'}>Login</Button>
-                    </Link>
-                </div>
+
+                <Hamburger/>
+
+                <nav className="hidden lg:flex items-center gap-8 font-medium">
+                    <Navigation/>
+                </nav>
+
             </div>
         </header>
     )

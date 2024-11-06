@@ -67,11 +67,33 @@
     animation-name: orbit;
 }
 
-/* You can add additional styles for different orbits if needed */
-.orbit-0 {
-/* Specific styles for the first orbit */
-}
-
-.orbit-1 {
-/* Specific styles for the second orbit */
+.clients-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+  }
+  
+  .clients-swiper {
+    width: 100%;
+  }
+  
+  .client-slide {
+    display: flex !important; /* Swiper às vezes aplica display block */
+    justify-content: center;
+    align-items: center;
+    height: 100%; /* Garante que o slide ocupe toda a altura disponível */
+  }
+  
+  .client-image {
+    object-fit: contain;
+    width: auto;
+    height: auto;
+    max-width: 100%;
+  }
+  .swiper {
+    display: flex !important;
+  }
+.swiper-wrapper {
+    display: flex !important;
 }
