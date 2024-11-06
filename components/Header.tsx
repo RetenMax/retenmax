@@ -20,7 +20,7 @@ const Header = () => {
 
                 <Hamburger/>
 
-                <nav className="hidden lg:flex items-center gap-4">
+                <nav className="hidden lg:flex items-center gap-8 font-medium">
                     <Navigation/>
                 </nav>
 

@@ -21,12 +21,12 @@ export default async function Blog() {
         <>
             <Header />
             <main className='mt-28'>
-                <h1 className="w-full leading-[50px] text-6xl lg:text-8xl font-extrabold antialiased text-orange-100 lg:leading-[86px] max-w-7xl mx-auto">
+                <h1 className="w-full leading-[50px] px-4 text-6xl lg:text-8xl font-extrabold antialiased text-orange-100 lg:leading-[86px] max-w-7xl mx-auto">
                     Blog
                 </h1>
                 <div className="bg-[url('/images/hero-bg.webp')] h-lvh">
 
-                <div className="grid grid-cols-4 gap-6 pt-16 pb-16  max-w-7xl mx-auto">
+                <div className="grid md:grid-cols-4 gap-6 pt-16 pb-16  max-w-7xl mx-auto">
                     {posts.map(post => (
                         <Link key={post.id} href={`/blog/${post.uid}`}>
                             <div className="rounded shadow-lg p-4 w-full hover:opacity-70 ">

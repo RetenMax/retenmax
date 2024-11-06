@@ -8,7 +8,7 @@ import { motion } from "framer-motion"
 
 const About = () => {
     return (
-        <section id="about" className="container lg:pt-14 pb-14">
+        <section id="sobre" className="container lg:pt-14 pb-14">
             <div className="grid grid-cols-1 md:grid-cols-2 h-auto gap-8 bg-[url('/images/bg-about.webp')] bg-cover p-8 lg:p-32">
                 <motion.div
                     initial={{ opacity: 0, z: 1, transform: "translateX(-40px)" }}
@@ -26,8 +26,8 @@ const About = () => {
                         O que é a Retenmax?
                     </h1>
                     <Link href="https://api.whatsapp.com/send?phone=5567999502501" target="_blank">
-                        <Button className="flex gap-2 w-64" variant="destructive">
-                            Quero reter meus clientes <ArrowRightCircle className="h-4 w-4" />
+                        <Button className="flex gap-2 hover:scale-95 transition-transform duration-300" variant="destructive">
+                        Descubrir o Potencial da Minha Empresa <ArrowRightCircle className="h-4 w-4" />
                         </Button>
                     </Link>
                 </motion.div>

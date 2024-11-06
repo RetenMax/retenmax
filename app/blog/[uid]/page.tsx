@@ -47,7 +47,7 @@ export default async function BlogPost({ params }: PostProps) {
 
       <div className='  pt-28 relative max-w-7xl mx-auto '>
 
-        <Link href={'../blog'} className=' z-10 p-4 rounded-full bg-black mt-[88px] hover:bg-[#000111] '> voltar </Link>
+        <Link href={'../blog'} className='  p-4 rounded-full bg-black/50 absolute hover:bg-orange-600 '> voltar </Link>
 
         
       {post.data.slices.map((slice, index) => (
