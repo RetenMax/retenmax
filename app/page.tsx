@@ -7,6 +7,7 @@ import Contact from "@/components/Contact";
 import Podcast from "@/components/Podcast";
 import Header from "@/components/Header";
 import Blog from "./blog/page";
+import Footer from "@/components/Footer";
 
 const Home = () => {
     return (
@@ -19,6 +20,7 @@ const Home = () => {
             <Clients />
             <Team />
             <Contact />
+            <Footer />
         </main>
     )
 }

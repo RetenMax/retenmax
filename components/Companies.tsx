@@ -15,7 +15,7 @@ const Companies = () => {
                         transition={{ ease: 'easeInOut', duration: 1.5 }}
                         className="w-full flex flex-col md:flex justify-center items-center min-h-full  pb-12 lg:p-2">
                         <h1 className="leading-[46px] leading-2 text-4xl text-center md:text-left  md:text-7xl font-extrabold antialiased text-orange-100 pt-10 ">
-                            Retenção em todas as verticais 
+                            Retenção em Todas as Verticais 
                         </h1>
                     </motion.div>
 
