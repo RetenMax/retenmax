@@ -42,7 +42,7 @@ export default async function BlogPost({ params }: PostProps) {
   console.log("Estrutura de slices do post:", post.data.slices);
 
   return (
-    <article className="rounded shadow-lg w-full  mx-auto bg-[url('/images/hero-bg.webp')] bg-cover h-[50%]">
+    <article className="rounded shadow-lg w-full  mx-auto bg-[url('/images/hero-bg.webp')]  ">
       <Header/>
 
       <div className='  pt-28 relative max-w-7xl mx-auto '>
@@ -64,18 +64,18 @@ export default async function BlogPost({ params }: PostProps) {
               className='block mx-auto'
             />
           )}
-          <div className="flex flex-col justify-between  backdrop-blur-md p-5 w-full  h-[500px]">
+          <div className="flex flex-col justify-between  backdrop-blur-md p-5 w-full  h-auto">
             
-          <div className=' mx-auto max-w-7xl'>
+          <div className=' mx-auto  max-w-7xl'>
             {/* Renderização do título e do conteúdo diretamente como texto */}
-            <h1 className="text-4xl font-bold antialiased text-orange-100 ">
+            <h1 className="text-xl md:text-4xl max-w-[30ch] mx-auto text-center font-bold antialiased text-orange-100 pb-10">
               {slice.primary?.title || 'Título não disponível'}
             </h1>
-            <p>
+            <p className='max-w-[150ch] mx-auto  text-left md:text-justify text-base'>
               {slice.primary?.body || 'Conteúdo não disponível'}
             </p>
 
-            <div className="flex text-gray-400 text-sm pt-2">
+            <div className="flex text-center  text-gray-400 text-sm py-2">
               {new Date(post.first_publication_date).getUTCDate()}/
               {new Date(post.first_publication_date).getMonth() + 1}/
               {new Date(post.first_publication_date).getFullYear()}

@@ -1,7 +1,6 @@
 import client from '@/app/prismicio';
 import Header from '@/components/Header';
 import Link from 'next/link';
-import { asText } from '@prismicio/helpers';
 
 export const metadata = {
     title: "Blog Retenmax",
@@ -26,7 +25,7 @@ export default async function Blog() {
                 </h1>
                 <div className="bg-[url('/images/hero-bg.webp')] h-lvh">
 
-                <div className="grid md:grid-cols-4 gap-6 pt-16 pb-16  max-w-7xl mx-auto">
+                <div className="grid md:grid-cols-4 gap-6 pt-16 pb-16   max-w-7xl mx-auto">
                     {posts.map(post => (
                         <Link key={post.id} href={`/blog/${post.uid}`}>
                             <div className="rounded shadow-lg p-4 w-full hover:opacity-70 ">
@@ -42,10 +41,10 @@ export default async function Blog() {
                                             />
                                         )}
                                         <div className="flex flex-col justify-between min-h-44 bg-black/30 backdrop-blur-md p-5">
-                                            <h1 className="text-4xl font-bold antialiased text-orange-100">
+                                            <h1 className=" font-bold antialiased text-orange-100 text-xl pb-2">
                                                 {slice.primary?.title || 'Título não disponível'}
                                             </h1>
-                                            <p>
+                                            <p className='max-h-24 overflow-hidden'>
                                                 {slice.primary?.body || 'Conteúdo não disponível'}
                                             </p>
                                             <div className="flex text-gray-400 text-sm pt-2">
