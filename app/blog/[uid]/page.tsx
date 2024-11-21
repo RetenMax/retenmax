@@ -33,8 +33,13 @@ export async function generateStaticParams() {
 }
 
 export default async function BlogPost({ params }: PostProps) {
-  const post = (await client.getByUID('post', params.uid)) as PostDocument | null;
-
+  const post = await client.getByUID('post', params.uid, {
+    fetchOptions: {
+      cache: 'force-cache', // Altere para 'no-store' se desejar evitar cache
+    },
+  }) as PrismicDocument<PostData> | null;
+  
+  
   if (!post) {
     return <div>Post não encontrado</div>;
   }
