@@ -13,8 +13,11 @@ export const viewport = "width=device-width, initial-scale=1.0";
 
 export default async function Blog() {
     // Fetch dos posts diretamente no componente
-    const posts = await client.getAllByType('post');
-    console.log("Posts retornados:", posts);
+    const posts = await client.getAllByType('post', {
+        fetchOptions: {
+            next: {revalidate: 60},
+        }
+    });
 
     return (
         <>

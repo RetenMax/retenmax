@@ -14,7 +14,7 @@ type PostSlice = Slice<
   {
     title?: string;
     image?: ImageField;
-    body?: RichTextField | string; // Permite body como string ou RichTextField
+    body?: RichTextField | string;
   }
 > & {
   slice_label: string | null;
@@ -26,17 +26,10 @@ type PostData = {
 
 type PostDocument = PrismicDocument<PostData>;
 
-export async function generateStaticParams() {
-  const posts = await client.getAllByType('post');
-  return posts.map((post) => ({
-    uid: post.uid,
-  }));
-}
-
 export default async function BlogPost({ params }: PostProps) {
   const post = (await client.getByUID('post', params.uid, {
     fetchOptions: {
-      cache: 'no-store',
+      cache: 'no-store'
     },
   })) as PostDocument | null;
 
@@ -60,26 +53,24 @@ export default async function BlogPost({ params }: PostProps) {
           const bodyContent = slice.primary?.body;
           let formattedBody: RichTextField = [];
 
-          // Verifica se o body é uma string
+         
           if (typeof bodyContent === 'string') {
-            // Se for string, converte em um array de blocos de texto que o Prismic espera
+           
             formattedBody = bodyContent.split('\n').map((text) => ({
               type: 'paragraph',
               text: text.trim(),
-              spans: [], // Inicializa a propriedade spans como um array vazio
-            })) as RichTextField; // Certifique-se de que isso é tratado como RichTextField
+              spans: [], 
+            })) as RichTextField; 
           } else if (Array.isArray(bodyContent)) {
-            // Se for um RichTextField (array de blocos), usa diretamente
             formattedBody = bodyContent;
           }
-
-          // Garantir que formattedBody seja um array válido e não vazio
+       
           if (!formattedBody || !Array.isArray(formattedBody) || formattedBody.length === 0) {
             formattedBody = [
               {
                 type: 'paragraph',
                 text: 'Conteúdo não disponível',
-                spans: [], // Inicializa a propriedade spans
+                spans: [], 
               },
             ] as RichTextField;
           }
@@ -102,7 +93,7 @@ export default async function BlogPost({ params }: PostProps) {
                     {slice.primary?.title || 'Título não disponível'}
                   </h1>
 
-                  {/* Renderizar RichText */}
+                
                   <div className="max-w-[150ch] mx-auto text-left md:text-justify text-base">
                     <PrismicRichText field={formattedBody} />
                   </div>
