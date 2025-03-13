@@ -35,7 +35,7 @@ const Hero = () => {
                     <h2 className="pt-6 mb-5 font-light text-1xl max-w-[60ch]">
                    Estamos prontos para auxiliar sua empresa a enfrentar os desafios mais complexos e emergentes do mercado.
                     </h2>
-                    <Link href="https://api.whatsapp.com/send?phone=5567999502501" target="_blank">
+                    <Link href="https://api.whatsapp.com/send?phone=556799438628&text=Ol%C3%A1%2C%20gostaria%20de%20saber%20mais%20sobre%20os%20servi%C3%A7os%20da%20RetenMax." target="_blank">
                         <Button className="flex gap-2 hover:scale-95 transition-transform duration-300" variant="destructive">
                         Descobrir o Potencial da Minha Empresa <ArrowRightCircle className="h-4 w-4" />
                         </Button>
