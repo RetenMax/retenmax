@@ -25,7 +25,7 @@ const About = () => {
                     <h1 className="w-full leading-2 text-4xl md:text-7xl font-extrabold antialiased text-orange-100 lg:text-8xl">
                         O que é a Retenmax?
                     </h1>
-                    <Link href="https://api.whatsapp.com/send?phone=5567999502501" target="_blank">
+                    <Link href="https://api.whatsapp.com/send?phone=556799438628&text=Ol%C3%A1%2C%20gostaria%20de%20saber%20mais%20sobre%20os%20servi%C3%A7os%20da%20RetenMax." target="_blank">
                         <Button className="flex gap-2 hover:scale-95 transition-transform duration-300" variant="destructive">
                         Descobrir o Potencial da Minha Empresa <ArrowRightCircle className="h-4 w-4" />
                         </Button>
