@@ -4,7 +4,7 @@
 
 @layer base {
     :root {
-        --background: rgba(40, 40, 40, 1);
+        --background: #000;
         --foreground: rgb(255, 255, 255);
 
         --card: rgb(221, 221, 221);
@@ -96,4 +96,8 @@
   }
 .swiper-wrapper {
     display: flex !important;
+}
+
+.companies-bg {
+  background-image: linear-gradient(to bottom, #F58300, #3a1a09, #000000, #000000, #000000);
 }

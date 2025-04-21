@@ -8,6 +8,7 @@ import Podcast from "@/components/Podcast";
 import Header from "@/components/Header";
 import Blog from "./blog/page";
 import Footer from "@/components/Footer";
+import Image from "next/image";
 
 const Home = () => {
     return (

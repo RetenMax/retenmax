@@ -38,9 +38,9 @@ export const metadata: Metadata = {
 export default function RootLayout({ children }: { children?: any }) {
     return (
         <html lang="pt-br">
-            <body>
+            <body className={inter.className}>
+                <Header/>
                 <main>
-                    <Header/>
                     {children}
                     <PrismicPreview repositoryName={repositoryName} />
                 </main>
