@@ -1,5 +1,4 @@
 import { useState } from "react";
-import { Navigation } from "./Navigation";
 
 export const Hamburger = () => {
 
@@ -20,7 +19,7 @@ export const Hamburger = () => {
 
                 <nav className="flex flex-col items-center gap-4 text-[1.5rem] ">
 
-                <Navigation onClick={toggleMenu} />
+                {/* <Navigation onClick={toggleMenu} /> */}
                 
                 </nav>
             </div>
