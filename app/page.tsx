@@ -12,7 +12,7 @@ import Image from "next/image";
 
 const Home = () => {
     return (
-        <>
+        <div className="w-full h-auto">
             <Hero />
             <Companies />
             <About />
@@ -21,7 +21,7 @@ const Home = () => {
             <Team />
             <Contact />
             <Footer />
-        </>
+        </div>
     )
 }
 

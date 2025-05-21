@@ -12,7 +12,7 @@ export default  function Companies() {
 
             <h1 className="text-center font-bold text-[38px]">Retenção em Todas as Verticais</h1>
 
-            <div className="container mx-auto grid grid-cols-4 p-12 gap-4">
+            <div className="container mx-auto grid md:grid-cols-4 p-12 gap-4">
 
                 <CompanyTileCard className="relative flex flex-col gap-2">
                     <motion.img

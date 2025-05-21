@@ -1,15 +1,18 @@
 'use client'
 
+// Libs
 import { motion } from "framer-motion";
-import AnimatedGradientBackground from "./ui/animated-gradient-background";
-import { GooeyText } from "./ui/gooey-text-morphing";
-import { Button } from "./ui/button";
-import { ChevronRightCircle } from "lucide-react";
 import Link from "next/link";
+
+// Components
+import { ChevronRightCircle } from "lucide-react";
+import AnimatedGradientBackground from "./ui/animated-gradient-background";
+import { Button } from "./ui/button";
+import { GooeyText } from "./ui/gooey-text-morphing";
 
 export default function Hero() {
     return (
-        <div className="w-full h-screen flex items-center justify-center">
+        <div className="w-full h-[calc(100vh-100px)] flex items-center justify-center">
 
             <motion.div
                 initial={{ opacity: 0 }}
@@ -18,9 +21,11 @@ export default function Hero() {
                 className="z-10"
             >
                 <div className="flex flex-col items-center justify-center gap-12">
-                    <h1 className="max-w-2xl text-[48px] font-semibold text-center leading-tight text-transparent bg-clip-text bg-gradient-to-r from-orange-200 to-orange-300">
+
+                    <h1 className="md:max-w-2xl text-2xl p-6 md:text-[48px] font-semibold text-center leading-tight text-transparent bg-clip-text bg-gradient-to-r from-orange-200 to-orange-300">
                         Solucionamos os maiores desafios de sua empresa em
                     </h1>
+
                     <GooeyText
                         texts={["IA", "Financeiro", "Atendimento", "Processos", "Marketing", "Vendas"]}
                         morphTime={2}

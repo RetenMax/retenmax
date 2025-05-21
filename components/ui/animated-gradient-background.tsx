@@ -142,7 +142,7 @@ const AnimatedGradientBackground: React.FC<AnimatedGradientBackgroundProps> = ({
          key="animated-gradient-background"
          initial={{
             opacity: 0,
-            scale: 1.5,
+            scale: 1,
          }}
          animate={{
             opacity: 1,
