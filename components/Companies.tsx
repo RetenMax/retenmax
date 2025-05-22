@@ -5,6 +5,7 @@ import AnimatedGradientBackground from "./ui/animated-gradient-background";
 import { GlowingEffect } from "./ui/glowing-effect";
 import { Button } from "./ui/button";
 import { ChevronRight, ChevronRightCircle } from "lucide-react";
+import Link from "next/link";
 
 export default  function Companies() {
     return (
@@ -27,10 +28,12 @@ export default  function Companies() {
                     <p className="font-medium text-[14px] text-zinc-400">
                         Inteligência Artificial Aplicada à Gestão, ajudando empresas a automatizar atendimentos, otimizar processos e melhorar a experiência do cliente.
                     </p>
-                    <Button variant={"outline"} className="flex gap-2 mt-4">
-                        Conheça mais
-                        <ChevronRightCircle width={16} height={16} />
-                    </Button>
+                    <Link href="/maxia">
+                        <Button variant={"outline"} className="flex gap-2 mt-4">
+                            Conheça mais
+                            <ChevronRightCircle width={16} height={16} />
+                        </Button>
+                    </Link>
                 </CompanyTileCard>
 
                 <CompanyTileCard className="flex flex-col gap-2">
@@ -46,10 +49,12 @@ export default  function Companies() {
                     <p className="font-medium text-[14px] text-zinc-400">
                         O FinMax é a solução da RetenMax para empresas que desejam transformar a gestão financeira em um pilar de crescimento sustentável. Com foco em organização, clareza e estratégia, o serviço entrega uma visão completa da saúde financeira do negócio, permitindo que empresários tomem decisões mais assertivas e planejadas.
                     </p>
-                    <Button variant={"outline"} className="flex gap-2 mt-4">
-                        Conheça mais
-                        <ChevronRightCircle width={16} height={16} />
-                    </Button>
+                    <Link href="/finmax">
+                        <Button variant={"outline"} className="flex gap-2 mt-4">
+                            Conheça mais
+                            <ChevronRightCircle width={16} height={16} />
+                        </Button>
+                    </Link>
                 </CompanyTileCard>
 
                 <CompanyTileCard className="flex flex-col gap-2">
@@ -63,10 +68,12 @@ export default  function Companies() {
                     />
                     <h1 className="w-full font-semibold text-left">RMaster</h1>
                     <p className="font-medium text-[14px] text-zinc-400">Gestão Financeira Empresarial, ajudando empresas a estruturar, organizar e otimizar seus processos financeiros.</p>
-                    <Button variant={"outline"} className="flex gap-2 mt-4">
-                        Conheça mais
-                        <ChevronRightCircle width={16} height={16} />
-                    </Button>
+                    <Link href="/rmaster">
+                        <Button variant={"outline"} className="flex gap-2 mt-4">
+                            Conheça mais
+                            <ChevronRightCircle width={16} height={16} />
+                        </Button>
+                    </Link>
                 </CompanyTileCard>
 
                 <CompanyTileCard className="flex flex-col gap-2">
@@ -82,10 +89,12 @@ export default  function Companies() {
                     <p className="font-medium text-[14px] text-zinc-400">
                         Marketing Estratégico para empresas, ajudando negócios a fortalecer sua marca, atrair clientes e aumentar suas vendas.
                     </p>
-                    <Button variant={"outline"} className="flex gap-2 mt-4">
-                        Conheça mais
-                        <ChevronRightCircle width={16} height={16} />
-                    </Button>
+                    <Link href="/rmax">
+                        <Button variant={"outline"} className="flex gap-2 mt-4">
+                            Conheça mais
+                            <ChevronRightCircle width={16} height={16} />
+                        </Button>
+                    </Link>
                 </CompanyTileCard>
 
             </div>
