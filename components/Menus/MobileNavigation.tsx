@@ -7,7 +7,12 @@ import { useState } from "react"
 import { X } from "lucide-react"
 import Image from "next/image"
 
-export default function MobileNavigation({ open, menuState }) {
+interface MobileNavigationProps {
+    open: boolean;
+    menuState: () => void;
+}
+
+export default function MobileNavigation({ open, menuState }: MobileNavigationProps) {
     return (
         <div className={`${open ? 'block' : 'hidden'} w-full h-screen bg-zinc-900/50 backdrop-blur fixed top-0 left-0 z-50 flex gap-4`}>
 
