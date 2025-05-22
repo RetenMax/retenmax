@@ -7,7 +7,6 @@ import Contact from "@/components/Contact";
 import Podcast from "@/components/Podcast";
 import Header from "@/components/Header";
 import Blog from "./blog/page";
-import Footer from "@/components/Footer";
 import Image from "next/image";
 
 const Home = () => {
@@ -20,7 +19,6 @@ const Home = () => {
             <Clients />
             <Team />
             <Contact />
-            <Footer />
         </div>
     )
 }

@@ -44,6 +44,8 @@ export default function RootLayout({ children }: { children?: any }) {
                     {children}
                     <PrismicPreview repositoryName={repositoryName} />
                 </main>
+                <Footer />
+                <Whatsapp />
             </body>
         </html>
     );
