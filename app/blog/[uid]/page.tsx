@@ -78,6 +78,7 @@ export default async function BlogPost({ params }: PostProps) {
           return (
             <div key={index} className="space-y-6">
               {slice.primary?.image?.url && (
+                // eslint-disable-next-line @next/next/no-img-element
                 <img
                   style={{ objectFit: 'cover' }}
                   src={slice.primary.image.url}

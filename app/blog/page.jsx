@@ -35,6 +35,7 @@ export default async function Blog() {
                                 {post.data.slices.map((slice, index) => (
                                     <div key={index}>
                                         {slice.primary?.image?.url && (
+                                            // eslint-disable-next-line @next/next/no-img-element
                                             <img
                                                 style={{ objectFit: "cover", borderRadius: "10px" }}
                                                 src={slice.primary.image.url}

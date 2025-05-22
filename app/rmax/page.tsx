@@ -241,7 +241,7 @@ export default function RMaxPage() {
                 </div>
               </div>
               <p className="text-zinc-300 italic">
-                "A estratégia de marketing implementada pela RMax transformou completamente nossa presença online e impulsionou nossas vendas. Os resultados superaram nossas expectativas."
+                A estratégia de marketing implementada pela RMax transformou completamente nossa presença online e impulsionou nossas vendas. Os resultados superaram nossas expectativas.
               </p>
             </motion.div>
           ))}
