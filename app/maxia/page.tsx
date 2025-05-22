@@ -165,7 +165,7 @@ export default function MaxIAPage() {
                 </li>
               ))}
             </ul>
-            <Button className="w-fit mt-4">Ver estudo completo</Button>
+            <Button className="w-fit mt-4">Ver casos de sucesso</Button>
           </motion.div>
         </div>
       </section>
@@ -180,22 +180,92 @@ export default function MaxIAPage() {
         >
           <h2 className="text-3xl md:text-4xl font-bold mb-6">Integração Perfeita com seus Sistemas</h2>
           <p className="text-zinc-400 max-w-2xl mx-auto">
-            A Max IA se adapta ao seu negócio, integrando-se facilmente com as principais plataformas e sistemas.
+            A Max IA se adapta ao seu negócio, integrando-se facilmente com as principais plataformas e sistemas utilizados no mercado.
           </p>
         </motion.div>
         
-        <div className="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-6 gap-6">
-          {Array.from({ length: 6 }).map((_, index) => (
+        <div className="grid grid-cols-2 md:grid-cols-4 gap-6">
+          {[
+            { name: "Google Drive", icon: "📁" },
+            { name: "Feegow", icon: "🏥" },
+            { name: "N8N", icon: "🔄" },
+            { name: "Google Calendar", icon: "📅" },
+            { name: "Calendly", icon: "🗓️" },
+            { name: "WhatsApp", icon: "💬" },
+            { name: "Instagram", icon: "📸" },
+            { name: "Amazon", icon: "🛒" },
+            { name: "E-mail", icon: "📧" },
+            { name: "Webhooks", icon: "🪝" },
+            { name: "Banco de Dados", icon: "🗄️" },
+            { name: "Bases de Dados Vectors", icon: "🧠" }
+          ].map((system, index) => (
             <motion.div
               key={index}
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.3, delay: index * 0.1 }}
-              className="bg-zinc-800 p-4 rounded-xl h-24 flex items-center justify-center"
+              transition={{ duration: 0.3, delay: index * 0.05 }}
+              className="bg-zinc-800/70 backdrop-blur-sm p-6 rounded-xl border border-zinc-700 hover:border-orange-500/30 transition-all duration-300 hover:shadow-lg hover:shadow-orange-500/5 group"
             >
-              <div className="w-12 h-12 bg-zinc-700 rounded-full"></div>
+              <div className="flex flex-col items-center text-center gap-3">
+                <div className="text-3xl mb-1 bg-gradient-to-br from-orange-500/20 to-purple-500/20 w-16 h-16 flex items-center justify-center rounded-lg border border-zinc-700">
+                  {system.icon}
+                </div>
+                <h3 className="text-sm font-medium group-hover:text-orange-500 transition-colors">{system.name}</h3>
+              </div>
             </motion.div>
           ))}
+        </div>
+      </section>
+
+      {/* Meta Verified Section */}
+      <section className="container py-20">
+        <div className="grid md:grid-cols-2 gap-12 items-center">
+          <motion.div
+            initial={{ opacity: 0, x: -20 }}
+            whileInView={{ opacity: 1, x: 0 }}
+            transition={{ duration: 0.8 }}
+            className="order-2 md:order-1"
+          >
+            <div className="flex flex-col gap-6">
+              <span className="bg-blue-500/10 text-blue-400 px-4 py-1 rounded-full w-fit text-sm font-medium">
+                Meta Verified
+              </span>
+              <h2 className="text-3xl md:text-4xl font-bold">Empresa Certificada pelo Meta</h2>
+              <p className="text-zinc-400">
+                A RetenMax é uma empresa oficialmente verificada pela Meta, garantindo que nossos serviços de integração com WhatsApp e Instagram atendem aos mais altos padrões de segurança e qualidade estabelecidos pela plataforma.
+              </p>
+              <ul className="space-y-3 mt-2">
+                {[
+                  "Acesso privilegiado às APIs oficiais do WhatsApp e Instagram",
+                  "Suporte prioritário da Meta para resolução de problemas",
+                  "Garantia de conformidade com as políticas de uso e privacidade",
+                  "Maior estabilidade e confiabilidade nas integrações"
+                ].map((item, i) => (
+                  <li key={i} className="flex items-center gap-3">
+                    <CheckCircle className="text-blue-500" size={20} />
+                    <span>{item}</span>
+                  </li>
+                ))}
+              </ul>
+            </div>
+          </motion.div>
+          <motion.div
+            initial={{ opacity: 0, x: 20 }}
+            whileInView={{ opacity: 1, x: 0 }}
+            transition={{ duration: 0.8, delay: 0.2 }}
+            className="order-1 md:order-2"
+          >
+            <div className="relative h-[300px] rounded-2xl overflow-hidden border border-blue-500/20 p-1">
+              <div className="absolute inset-0 bg-gradient-to-r from-blue-500/10 to-blue-700/10 z-10 flex items-center justify-center">
+                <div className="bg-blue-500/10 backdrop-blur-sm p-6 rounded-full border border-blue-500/30">
+                  <div className="text-5xl">✓</div>
+                </div>
+              </div>
+              <div className="absolute inset-0 flex items-center justify-center">
+                <span className="text-2xl font-bold text-blue-400 z-20">Meta Verified Partner</span>
+              </div>
+            </div>
+          </motion.div>
         </div>
       </section>
       
